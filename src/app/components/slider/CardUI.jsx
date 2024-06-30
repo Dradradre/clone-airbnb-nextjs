@@ -24,7 +24,7 @@ const CardUI = ({ item }) => (
 
     <Link href={`rooms/${item.accommodationId}`} className='block'>
       <div className='relative'>
-        <CardImageSlider images={item.imageUrl} />
+        <CardImageSlider images={item.images} />
       </div>
     </Link>
 
@@ -53,7 +53,7 @@ const CardUI = ({ item }) => (
           alt='star icon'
           className='w-4 h-6 pr-1'
         />
-        {item.rating}
+        {item.accommodationRating}
       </div>
     </div>
   </li>
