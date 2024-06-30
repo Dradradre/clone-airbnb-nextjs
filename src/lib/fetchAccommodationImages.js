@@ -8,3 +8,12 @@ export const fetchAccommodationImages = async (accommodationId) => {
   const data = await response.json()
   return data
 }
+
+export const fetchAccommodationImage = async () => {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/accommodation-images`)
+  if (!response.ok) {
+    throw new Error('Failed to fetch accommodation images')
+  }
+  const data = await response.json()
+  return data
+}
