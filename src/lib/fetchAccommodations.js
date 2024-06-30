@@ -1,4 +1,5 @@
 export const fetchAccommodations = async (accommodationId) => {
+  console.log(process.env.NEXT_PUBLIC_API_BASE_URL)
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/accommodations/${accommodationId}`,
   )
